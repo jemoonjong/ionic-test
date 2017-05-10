@@ -12,6 +12,8 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { SqlServiceProvider } from '../providers/sql-service/sql-service';
 
+
+
 @NgModule({
   declarations: [
     MyApp,
