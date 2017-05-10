@@ -10,7 +10,6 @@ import { TabsPage } from '../pages/tabs/tabs';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-import { SqlServiceProvider } from '../providers/sql-service/sql-service';
 
 @NgModule({
   declarations: [
@@ -35,8 +34,7 @@ import { SqlServiceProvider } from '../providers/sql-service/sql-service';
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler},
-    SqlServiceProvider
+    {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
 export class AppModule {}
